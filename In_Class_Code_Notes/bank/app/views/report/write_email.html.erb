@@ -1,0 +1,6 @@
+<h1>Please pick a victim</h1>
+
+<%= form_tag report_send_email_path do %>
+  <%= text_field_tag :addresses, nil, placeholder: "Email Address"%>
+  <%= submit_tag %>
+<% end %>

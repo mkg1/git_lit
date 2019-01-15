@@ -1,0 +1,191 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'donejs' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'donejs', null ]
+7 verbose cache add spec donejs
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'donejs',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'donejs',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed donejs@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for donejs
+11 info addNameTag [ 'donejs', 'latest' ]
+12 silly mapToRegistry name donejs
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'donejs',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'donejs',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/donejs
+17 verbose addNameTag registry:https://registry.npmjs.org/donejs not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/donejs
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 6:18:15 PM
+21 verbose request id 6700a3c95b2a6a87
+22 verbose etag "44QORI0FRMKMJ13COVVO4AJMS"
+23 http request GET https://registry.npmjs.org/donejs
+24 http 304 https://registry.npmjs.org/donejs
+25 verbose headers { date: 'Tue, 03 May 2016 22:18:16 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"44QORI0FRMKMJ13COVVO4AJMS"',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-jfk1040-JFK',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1462313896.177147,VS0,VE80',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Tue, 03 May 2016 22:18:16 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"44QORI0FRMKMJ13COVVO4AJMS"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-jfk1040-JFK',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1462313896.177147,VS0,VE80',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/donejs from cache
+28 verbose get saving donejs to /Users/mkgehring/.npm/registry.npmjs.org/donejs/.cache.json
+29 verbose correctMkdir /Users/mkgehring/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for donejs with tag latest
+31 silly addNamed donejs@0.9.2
+32 verbose addNamed "0.9.2" is a plain semver version for donejs
+33 silly cache afterAdd donejs@0.9.2
+34 verbose afterAdd /Users/mkgehring/.npm/donejs/0.9.2/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/mkgehring/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/mkgehring/.npm/donejs/0.9.2/package/package.json written
+37 silly install resolved [ { name: 'donejs',
+37 silly install resolved     version: '0.9.2',
+37 silly install resolved     description: 'Your app is done',
+37 silly install resolved     main: 'index.js',
+37 silly install resolved     bin: { donejs: './bin/donejs' },
+37 silly install resolved     scripts:
+37 silly install resolved      { test: 'npm run jshint && npm run mocha && npm run document && npm run test-guides',
+37 silly install resolved        'test-guides': 'npm run test-quickstart && npm run test-pmo',
+37 silly install resolved        'test-quickstart': 'guide guides/guide/test.js --local',
+37 silly install resolved        'test-pmo': 'guide guides/place-my-order/test.js --local',
+37 silly install resolved        jshint: 'jshint lib/. bin/donejs test/. --config',
+37 silly install resolved        mocha: 'mocha test/test --timeout 120000',
+37 silly install resolved        verify: 'echo "Script ran"',
+37 silly install resolved        'document:watch': 'documentjs --watch',
+37 silly install resolved        document: 'documentjs -f && cp docs/theme/static/favicon.ico site/favicon.ico',
+37 silly install resolved        publish: 'git push origin && git push origin --tags',
+37 silly install resolved        'release:prerelease': 'npm version prerelease && npm publish',
+37 silly install resolved        'release:patch': 'npm version patch && npm publish',
+37 silly install resolved        'release:minor': 'npm version minor && npm publish',
+37 silly install resolved        'release:major': 'npm version major && npm publish',
+37 silly install resolved        coverage: 'istanbul cover _mocha -- test/test --timeout 120000',
+37 silly install resolved        'coverage:upload': 'istanbul cover _mocha --report lcovonly -- test/ --timeout 600000 && cat ./coverage/lcov.info | ./node_modules/coveralls-send/bin/coveralls.js' },
+37 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/donejs/donejs.git' },
+37 silly install resolved     keywords: [ 'CanJS', 'StealJS', 'DoneJS' ],
+37 silly install resolved     author: { name: 'Bitovi' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     bugs: { url: 'https://github.com/donejs/donejs/issues' },
+37 silly install resolved     homepage: 'https://github.com/donejs/donejs',
+37 silly install resolved     devDependencies:
+37 silly install resolved      { 'coveralls-send': '0.0.2',
+37 silly install resolved        documentjs: '^0.4.3',
+37 silly install resolved        dotdotdot: '^1.7.0',
+37 silly install resolved        'es6-promise': '^3.0.2',
+37 silly install resolved        'guide-automation': '^0.3.0',
+37 silly install resolved        'is-appveyor': '^1.0.0',
+37 silly install resolved        istanbul: '^0.4.2',
+37 silly install resolved        jshint: '^2.8.0',
+37 silly install resolved        mocha: '^2.2.5',
+37 silly install resolved        'mocha-lcov-reporter': '^1.2.0',
+37 silly install resolved        mockery: '^1.4.1',
+37 silly install resolved        'node-fetch': '^1.3.3',
+37 silly install resolved        rimraf: '^2.5.2',
+37 silly install resolved        'stream-when': '^1.0.0' },
+37 silly install resolved     dependencies:
+37 silly install resolved      { chalk: '^1.1.3',
+37 silly install resolved        commander: '^2.8.1',
+37 silly install resolved        'cross-spawn-async': '^2.0.0',
+37 silly install resolved        q: '^1.4.1' },
+37 silly install resolved     directories: { doc: 'docs' },
+37 silly install resolved     gitHead: '8facb1b7163bb4d461050ad0fe594e2d5fb8d2c3',
+37 silly install resolved     _id: 'donejs@0.9.2',
+37 silly install resolved     _shasum: 'cc4c34cd244b54d3fed5e14f2b6d4ccc52654a44',
+37 silly install resolved     _from: 'donejs@latest',
+37 silly install resolved     _npmVersion: '3.8.5',
+37 silly install resolved     _nodeVersion: '5.9.0',
+37 silly install resolved     _npmUser: { name: 'daffl', email: 'daff@neyeon.de' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'cc4c34cd244b54d3fed5e14f2b6d4ccc52654a44',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/donejs/-/donejs-0.9.2.tgz' },
+37 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/donejs-0.9.2.tgz_1460415939375_0.11467601219192147' },
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/donejs/-/donejs-0.9.2.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install donejs@0.9.2 into /usr/local/lib
+39 info installOne donejs@0.9.2
+40 verbose installOne of donejs to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/mkgehring/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/mkgehring/.npm/_locks/donejs-a555d803bd9634f1.lock for /usr/local/lib/node_modules/donejs
+43 silly install write writing donejs 0.9.2 to /usr/local/lib/node_modules/donejs
+44 verbose unbuild lib/node_modules/donejs
+45 silly gentlyRm /usr/local/lib/node_modules/donejs is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/donejs
+47 verbose tar unpack /Users/mkgehring/.npm/donejs/0.9.2/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/donejs
+49 silly gentlyRm /usr/local/lib/node_modules/donejs is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/donejs
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/mkgehring/.npm/donejs/0.9.2/package.tgz
+53 verbose unlock done using /Users/mkgehring/.npm/_locks/donejs-a555d803bd9634f1.lock for /usr/local/lib/node_modules/donejs
+54 verbose fstream_path /usr/local/lib/node_modules/donejs
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/donejs'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/mkgehring/Desktop/code
+60 error Darwin 15.3.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "donejs"
+62 error node v4.4.3
+63 error npm  v2.15.1
+64 error path /usr/local/lib/node_modules/donejs
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/donejs'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/donejs']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/donejs',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/donejs',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/donejs
+72 silly gentlyRm /usr/local/lib/node_modules/donejs is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/donejs

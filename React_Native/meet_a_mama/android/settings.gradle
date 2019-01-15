@@ -1,0 +1,3 @@
+rootProject.name = 'meet_a_mama'
+
+include ':app'
